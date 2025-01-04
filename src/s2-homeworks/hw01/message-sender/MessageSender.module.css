@@ -35,6 +35,8 @@
 }
 
 .button:hover {
+  background-color: rgb(4, 39, 74);
 }
 .button:active {
+  background-color: rgb(4, 39, 74);
 }
