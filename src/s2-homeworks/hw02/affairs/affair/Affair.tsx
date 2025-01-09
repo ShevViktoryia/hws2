@@ -6,13 +6,11 @@ import s2 from "../Affairs.module.css";
 type AffairPropsType = {
   key: number;
   affair: AffairType;
-  deleteAffairCallback: any; // need to fix any
+  deleteAffairCallback: (id: number) => void; // need to fix any
 };
 
 function Affair(props: AffairPropsType) {
-  const deleteCallback = () => {
-    // need to fix
-  };
+  const deleteCallback = () => props.deleteAffairCallback(props.affair._id);
 
   const nameClass = s.name + " " + s2[props.affair.priority];
   const buttonClass = s.closeButton + " " + s2[props.affair.priority];
@@ -22,7 +20,7 @@ function Affair(props: AffairPropsType) {
     <div id={"hw2-affair-" + props.affair._id} className={affairClass}>
       <div id={"hw2-name-" + props.affair._id} className={nameClass}>
         {/*создаёт студент*/}
-
+        {props.affair.name}
         {/**/}
       </div>
       <div id={"hw2-priority-" + props.affair._id} hidden>
@@ -32,7 +30,7 @@ function Affair(props: AffairPropsType) {
       <button
         id={"hw2-button-delete-" + props.affair._id}
         className={buttonClass}
-        // need to fix
+        onClick={() => deleteCallback()}
       >
         {/*текст кнопки могут изменить студенты*/}X{/**/}
       </button>
