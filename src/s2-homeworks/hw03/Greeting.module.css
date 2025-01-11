@@ -2,34 +2,71 @@
 }
 
 .inputAndButtonContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 .error {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c00;
+  margin-top: 7px;
 }
 
 .input {
+  border: 1px solid#d1d1d1;
+  border-radius: 5px;
+  width: 372px;
+  height: 36px;
 }
 
 .input:focus {
+  border: 1px solid#06c;
 }
 
 .errorInput {
+  width: 372px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid#c00;
 }
 
 .button {
+  border-radius: 3px;
+  padding: 5px 24px;
+  width: 78px;
+  height: 36px;
+  background: #06c;
+  border: 1px solid#06c;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fff;
+  text-transform: capitalize;
 }
 
 .button:focus {
+  border: 1px solid#06c;
 }
 
 .button:active {
+  opacity: 1;
 }
 
 .button:disabled {
+  opacity: 0.5;
 }
 
 .text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 9px;
 }
 
 .greeting {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
 }
