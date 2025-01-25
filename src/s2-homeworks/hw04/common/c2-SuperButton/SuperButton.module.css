@@ -3,6 +3,7 @@
   padding: 5px 24px;
   width: 132px;
   height: 30px;
+  border-color: transparent;
 }
 
 .disabled {
@@ -20,10 +21,12 @@
 
 .default {
   background: #06c;
+  transition: 0.5s;
 }
 
 .red {
   background: #cc1439;
+  transition: 0.5s;
 }
 
 .default:hover {
@@ -36,6 +39,7 @@
 
 .red:hover {
   background: #ff1a47;
+  width: 167px;
 }
 
 .secondary:hover {
