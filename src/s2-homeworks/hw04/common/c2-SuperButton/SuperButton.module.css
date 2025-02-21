@@ -17,11 +17,14 @@
   padding: 5px 24px;
   width: 176px;
   height: 30px;
+  background-color: #fff;
+  color: #06c;
 }
 
 .default {
   background: #06c;
   transition: 0.5s;
+  color: white;
 }
 
 .red {

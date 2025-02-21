@@ -5,19 +5,43 @@
 }
 
 .users {
+  width: 606px;
+  margin-top: 18px;
+  border-collapse: collapse;
+  tr,
+  td {
+    padding: 11px 17px;
+  }
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .buttonsContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
 }
 
 .container {
+  width: 606px;
 }
 
 .thead {
+  background-color: #e5e5e5;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
 }
 
 .nameCol {
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
 }
 
 .ageCol {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
 }
