@@ -1,15 +1,33 @@
 .radio {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+  accent-color: #000;
+}
+
+.finalRadioClassName {
 }
 
 .radio::before {
 }
 
-
 .radio:checked::before {
 }
 
 .label {
+  display: flex;
+  gap: 11px;
+  align-items: center;
 }
 
 .options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
