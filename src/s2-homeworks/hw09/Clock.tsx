@@ -52,12 +52,12 @@ function Clock() {
   });
 
   const formatterMonth = new Intl.DateTimeFormat("en", {
-    month: "short",
+    month: "long",
   });
 
   // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
-  const stringDay = formatterDay.format(date.getDay()) || <br />; // пишут студенты
-  const stringMonth = formatterMonth.format(date.getMonth()) || <br />; // пишут студенты
+  const stringDay = formatterDay.format(date) || <br />; // пишут студенты
+  const stringMonth = formatterMonth.format(date) || <br />; // пишут студенты
 
   return (
     <div className={s.clock}>
